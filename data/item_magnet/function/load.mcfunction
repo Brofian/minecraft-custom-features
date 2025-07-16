@@ -1,0 +1,1 @@
+scoreboard objectives add item_magnet_delay dummy

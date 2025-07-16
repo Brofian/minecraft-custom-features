@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:decorated_pot"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:decorated_pot",
+    "components": {
+      "minecraft:custom_data": {
+        "auto_place_pot": true
+      }
+    },
+    "count": 1
+  }
+}
