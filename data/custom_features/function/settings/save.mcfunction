@@ -6,7 +6,8 @@ $data merge storage custom_features:settings {toggles: {\
     autoplacing: $(toggle_autoplacing),\
     itemmagnet: $(toggle_itemmagnet),\
     paintball: $(toggle_paintball),\
-    chronometer: $(toggle_chronometer)\
+    chronometer: $(toggle_chronometer),\
+    vault_reloading: $(toggle_vault_reloading)\
 }}
 
 
@@ -30,6 +31,11 @@ execute if data storage custom_features:settings {toggles:{chronometer:1}} run \
     tellraw @s [{"text":" | Chronometer:     ", "color": "gold"}, {"text": "On", "color": "green"}]
 execute if data storage custom_features:settings {toggles:{chronometer:0}} run \
     tellraw @s [{"text":" | Chronometer:     ", "color": "gold"}, {"text": "Off", "color": "red"}]
+
+execute if data storage custom_features:settings {toggles:{vault_reloading:1}} run \
+    tellraw @s [{"text":" | Vault-Reloading: ", "color": "gold"}, {"text": "On", "color": "green"}]
+execute if data storage custom_features:settings {toggles:{vault_reloading:0}} run \
+    tellraw @s [{"text":" | Vault-Reloading: ", "color": "gold"}, {"text": "Off", "color": "red"}]
 
 
 

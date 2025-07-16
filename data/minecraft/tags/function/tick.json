@@ -3,6 +3,7 @@
 		"auto_placing:tick",
 		"item_magnet:tick",
 		"paintball:tick",
-		"chronometer:tick"
+		"chronometer:tick",
+		"ominous_vault_reloading:tick"
 	]
 }

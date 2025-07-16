@@ -39,5 +39,11 @@ This changes the behavior of rockets to function as paintball guns:
 A feature for restricting this to a specific area is partially implemented, but does not change the rockets right now
 
 ### Chronometer
-Gives the clock item more purpose by converting it into a pocketwatch!
+Gives the clock item more purpose by converting it into a pocket watch!
 See the current time and weather by only having it inside your inventory.
+
+### Ominous vault reloading
+Are you tired of searching for the hundredth trial chamber just because you can only use
+the ominous vaults once? Don't worry! You can now replace this limited resource with another limited resource!
+Craft a Vault-Reloader with a normal trial key and four echo shards, throw it on your ominous vault
+and invite all your friends to use it again! It's just so easy!

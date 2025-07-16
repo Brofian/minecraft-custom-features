@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": [
+      "minecraft:echo_shard"
+    ],
+    "b": [
+      "minecraft:trial_key"
+    ]
+  },
+  "result": {
+    "id": "minecraft:trial_key",
+    "components": {
+      "minecraft:custom_data": {
+        "ominous_vault_reloader": true
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:lore": [[
+        {
+          "text": "Resets an ",
+          "color": "white"
+        },
+        {
+          "text": "ominous vault",
+          "color": "gold"
+        },
+        {
+          "text": " when thrown on top!",
+          "color": "white"
+        }
+      ]],
+      "minecraft:item_name": {
+        "text": "Ominous Vault Reloader",
+        "type": "text",
+        "extra": [
+          ""
+        ],
+        "color": "gold",
+        "bold": true
+      },
+      "minecraft:item_model": "minecraft:ominous_trial_key"
+    },
+    "count": 1
+  }
+}

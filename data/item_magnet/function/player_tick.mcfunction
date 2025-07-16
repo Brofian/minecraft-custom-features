@@ -1,6 +1,5 @@
 # this function is executed once per tick for every player
 
-
 tag @s[tag=has_item_magnet] remove has_item_magnet
 
 execute if items entity @s weapon.mainhand minecraft:iron_ingot[minecraft:custom_data~{item_magnet:1b}] \

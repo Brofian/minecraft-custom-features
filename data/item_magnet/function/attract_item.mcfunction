@@ -9,7 +9,8 @@ execute unless score @s item_magnet_delay matches -200.. \
 #decrement delay
 scoreboard players remove @s item_magnet_delay 1
 
-execute if score @s item_magnet_delay matches ..-20 \
+execute if entity @s[type=item] \
+        if score @s item_magnet_delay matches ..-20 \
         at @s \
         run function item_magnet:hurt_player
 
@@ -29,5 +30,9 @@ execute facing entity @n[type=player,tag=magnet_target_player] eyes \
         summon area_effect_cloud \
         if function item_magnet:shrink_aec \
         run data modify entity @n[type=item,tag=magnet_target_item] Motion set from entity @s Pos
+
+
+# TNT gimmick
+# execute if entity @s[type=tnt] unless entity @p[distance=..2] run data merge entity @s {fuse: 20}
 
 tag @s remove magnet_target_item

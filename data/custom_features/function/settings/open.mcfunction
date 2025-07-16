@@ -7,6 +7,7 @@ data merge storage custom_features:settings {toggles:{save_template: \
         toggle_itemmagnet: $(toggle_itemmagnet),\
         toggle_paintball: $(toggle_paintball),\
         toggle_chronometer: $(toggle_chronometer),\
+        toggle_vault_reloading: $(toggle_vault_reloading),\
     }" \
 }}
 
