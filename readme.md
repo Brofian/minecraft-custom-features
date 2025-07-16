@@ -37,3 +37,7 @@ This changes the behavior of rockets to function as paintball guns:
 - Rockets placed by shift clicking will become mines that activate by contact or after a certain time
 
 A feature for restricting this to a specific area is partially implemented, but does not change the rockets right now
+
+### Chronometer
+Gives the clock item more purpose by converting it into a pocketwatch!
+See the current time and weather by only having it inside your inventory.

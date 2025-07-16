@@ -5,7 +5,8 @@ tellraw @s [{"text":"Saving settings for CustomFeatures:", "bold":true, "color":
 $data merge storage custom_features:settings {toggles: {\
     autoplacing: $(toggle_autoplacing),\
     itemmagnet: $(toggle_itemmagnet),\
-    paintball: $(toggle_paintball)\
+    paintball: $(toggle_paintball),\
+    chronometer: $(toggle_chronometer)\
 }}
 
 
@@ -21,6 +22,26 @@ execute if data storage custom_features:settings {toggles:{itemmagnet:0}} run \
     tellraw @s [{"text":" | Item-Magnet:      ", "color": "gold"}, {"text": "Off", "color": "red"}]
 
 execute if data storage custom_features:settings {toggles:{paintball:1}} run \
-    tellraw @s [{"text":" | Paintball:        ", "color": "gold"}, {"text": "On", "color": "green"}]
+    tellraw @s [{"text":" | Paintball:          ", "color": "gold"}, {"text": "On", "color": "green"}]
 execute if data storage custom_features:settings {toggles:{paintball:0}} run \
-    tellraw @s [{"text":" | Paintball:        ", "color": "gold"}, {"text": "Off", "color": "red"}]
+    tellraw @s [{"text":" | Paintball:          ", "color": "gold"}, {"text": "Off", "color": "red"}]
+
+execute if data storage custom_features:settings {toggles:{chronometer:1}} run \
+    tellraw @s [{"text":" | Chronometer:     ", "color": "gold"}, {"text": "On", "color": "green"}]
+execute if data storage custom_features:settings {toggles:{chronometer:0}} run \
+    tellraw @s [{"text":" | Chronometer:     ", "color": "gold"}, {"text": "Off", "color": "red"}]
+
+
+
+# run load functions, when enabled
+execute if data storage custom_features:settings {toggles:{paintball:1}} run \
+    function paintball:load
+execute if data storage custom_features:settings {toggles:{chronometer:1}} run \
+    function chronometer:load
+
+
+# run uninstall functions, when disabled
+execute if data storage custom_features:settings {toggles:{paintball:0}} run \
+    function paintball:uninstall
+execute if data storage custom_features:settings {toggles:{chronometer:0}} run \
+    function chronometer:uninstall

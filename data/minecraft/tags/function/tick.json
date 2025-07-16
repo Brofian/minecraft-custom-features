@@ -2,6 +2,7 @@
 	"values": [
 		"auto_placing:tick",
 		"item_magnet:tick",
-		"paintball:tick"
+		"paintball:tick",
+		"chronometer:tick"
 	]
 }

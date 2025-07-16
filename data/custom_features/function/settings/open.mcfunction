@@ -6,6 +6,7 @@ data merge storage custom_features:settings {toggles:{save_template: \
         toggle_autoplacing: $(toggle_autoplacing),\
         toggle_itemmagnet: $(toggle_itemmagnet),\
         toggle_paintball: $(toggle_paintball),\
+        toggle_chronometer: $(toggle_chronometer),\
     }" \
 }}
 
