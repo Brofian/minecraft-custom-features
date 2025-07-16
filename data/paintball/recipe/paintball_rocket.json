@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_transmute",
+  "category": "misc",
+  "input": [
+    "minecraft:firework_rocket"
+  ],
+  "material": [
+    "minecraft:bamboo"
+  ],
+  "result": {
+    "id": "minecraft:firework_rocket",
+    "components": {
+      "minecraft:use_cooldown": {
+        "seconds": 999,
+        "cooldown_group": "paintball_rocket"
+      }
+    }
+  }
+}

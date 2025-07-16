@@ -1,6 +1,7 @@
 {
 	"values": [
 		"auto_placing:tick",
-		"item_magnet:tick"
+		"item_magnet:tick",
+		"paintball:tick"
 	]
 }

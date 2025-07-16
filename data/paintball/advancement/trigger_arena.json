@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:gunpowder",
+          "predicates": {
+            "minecraft:custom_data": "{paintball_arena_trigger:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "paintball:arena_selection/trigger_item_clicked"
+  }
+}

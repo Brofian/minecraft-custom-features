@@ -21,11 +21,19 @@ to open the configuration dialog
 
 # Current list of features
 
-### Auto placing
+### Auto-Placing
 This allows pots to be crafted into auto-placeable pots. These will be placed
 once they exist as an item in the world. This allows for games with automated
 pot replacements via the crafter.
 
-### item_magnet
+### Item-Magnet
 Craft your very own item magnet with a breeze rod, an iron ingot and a blaze rod!
 Holding the magnet will pull nearby items to you. But make sure you can hold them all...
+
+### Paintball
+This changes the behavior of rockets to function as paintball guns:
+- Rockets cannot be fired normally, they will drop instead
+- Rockets fired from a crossbow will paint concrete on impact
+- Rockets placed by shift clicking will become mines that activate by contact or after a certain time
+
+A feature for restricting this to a specific area is partially implemented, but does not change the rockets right now

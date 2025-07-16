@@ -4,7 +4,8 @@ tellraw @s [{"text":"Saving settings for CustomFeatures:", "bold":true, "color":
 # update the value
 $data merge storage custom_features:settings {toggles: {\
     autoplacing: $(toggle_autoplacing),\
-    itemmagnet: $(toggle_itemmagnet)\
+    itemmagnet: $(toggle_itemmagnet),\
+    paintball: $(toggle_paintball)\
 }}
 
 
@@ -18,3 +19,8 @@ execute if data storage custom_features:settings {toggles:{itemmagnet:1}} run \
     tellraw @s [{"text":" | Item-Magnet:      ", "color": "gold"}, {"text": "On", "color": "green"}]
 execute if data storage custom_features:settings {toggles:{itemmagnet:0}} run \
     tellraw @s [{"text":" | Item-Magnet:      ", "color": "gold"}, {"text": "Off", "color": "red"}]
+
+execute if data storage custom_features:settings {toggles:{paintball:1}} run \
+    tellraw @s [{"text":" | Paintball:        ", "color": "gold"}, {"text": "On", "color": "green"}]
+execute if data storage custom_features:settings {toggles:{paintball:0}} run \
+    tellraw @s [{"text":" | Paintball:        ", "color": "gold"}, {"text": "Off", "color": "red"}]

@@ -2,6 +2,7 @@
     "values": [
         "custom_features:load",
         "auto_placing:load",
-        "item_magnet:load"
+        "item_magnet:load",
+        "paintball:load"
     ]
 }

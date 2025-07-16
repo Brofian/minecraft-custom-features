@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:gunpowder"
+  ],
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 1,
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds":10000,
+        "animation":"none",
+        "has_consume_particles":false
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_name": [
+        {"bold":true,"color":"dark_purple","text":"Magic"},
+        {"bold":true,"color":"aqua","text":" Paintball "},
+        {"bold":true,"color":"gold","text":"Powder"}
+      ],
+      "minecraft:lore": [
+        {"color":"dark_purple",     "text":"==========================="},
+        {"color":"dark_purple",     "text":"Right click to start placing your"},
+        {"bold":true,"color":"gold","text":"     Paintball-Arena     "},
+        {"color":"dark_purple",     "text":"==========================="}
+      ],
+      "minecraft:custom_data": "{paintball_arena_trigger:true}"
+    }
+  }
+}
