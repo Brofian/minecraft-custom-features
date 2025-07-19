@@ -1,0 +1,1 @@
+execute as @e[tag=ray] run function cflib:raytrace/remove

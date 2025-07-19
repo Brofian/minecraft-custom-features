@@ -1,3 +1,5 @@
+tag @s remove paintball_arena_editor
+
 # fixate the old block_display
 execute as @n[distance=..10,type=block_display,tag=pos2] \
     run function paintball:arena_selection/fixate_block_display

@@ -1,8 +1,11 @@
 # teleport the block_display in front of the player
-execute as @a at @s \
-    positioned ^ ^1.5 ^2.5 \
+
+
+execute as @a[tag=paintball_arena_editor] at @s \
+    if function cflib:raytrace \
+    as @n[tag=ray] at @s \
     align xyz \
-    run tp @e[distance=..10,tag=block_selector] ~-0.05 ~-0.05 ~-0.05
+    run tp @e[distance=..10,tag=block_selector] ~-0.05 ~ ~-0.05
 
 
 

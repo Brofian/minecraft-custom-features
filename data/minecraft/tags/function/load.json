@@ -1,6 +1,7 @@
 {
     "values": [
         "custom_features:load",
+        "cflib:load",
         "auto_placing:load",
         "item_magnet:load",
         "paintball:load",

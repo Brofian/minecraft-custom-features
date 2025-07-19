@@ -1,0 +1,1 @@
+kill @e[tag=grid_cell]

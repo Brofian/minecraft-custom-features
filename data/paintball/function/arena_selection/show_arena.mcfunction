@@ -36,7 +36,7 @@ scoreboard players operation center_x paintball /= TWO paintball
 
 scoreboard players operation center_y paintball = pos1_y paintball
 scoreboard players operation center_y paintball += pos2_y paintball
-scoreboard players add center_y paintball 3
+scoreboard players add center_y paintball 1
 scoreboard players operation center_y paintball *= TEN paintball
 scoreboard players operation center_y paintball /= TWO paintball
 
